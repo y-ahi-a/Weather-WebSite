@@ -1,0 +1,46 @@
+{
+  "coord": {
+    "lon": 3.0506,
+    "lat": 36.7323
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 27.4,
+    "feels_like": 28.1,
+    "temp_min": 27.4,
+    "temp_max": 27.4,
+    "pressure": 1015,
+    "humidity": 48,
+    "sea_level": 1015,
+    "grnd_level": 1007
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 10,
+    "deg": 30,
+    "gust": 15
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1728825600,
+  "sys": {
+    "type": 2,
+    "id": 2002538,
+    "country": "DZ",
+    "sunrise": 1728792000,
+    "sunset": 1728834000
+  },
+  "timezone": 3600,
+  "id": 2507480,
+  "name": "Algiers",
+  "cod": 200
+}

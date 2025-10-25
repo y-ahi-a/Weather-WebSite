@@ -1,0 +1,340 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(222, 222, 1, 0.411);
+    overflow-x: hidden;
+}
+.loader {
+    border: 6px solid #f7e685;
+    border-top: 6px solid #f9cc00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+header{
+    background-color: rgba(219, 194, 2, 0.839);   
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.fa-solid.fa-bars{
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgba(0, 0, 255, 0.864);
+    transition: color 0.5s ease;
+}
+header img{
+    height: 80px;
+    width: 80px;
+}
+header a{
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 131);
+    transition: color 0.7s ease;
+}
+header a:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 88);
+}
+header h1{
+    color: rgba(0, 0, 255, 0.85);
+}
+.fa-solid.fa-bars:hover{
+    color: rgb(0, 0, 131);
+}
+#burgermenu {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    width: 80%;
+    transition: max-height 0.5s ease, padding 0.3s ease, margin 0.3s ease;
+}
+#burgermenu a {
+    padding: 10px;
+    background-color: rgb(180, 165, 0);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+}
+#burgermenu.active {
+    max-height: 300px;
+    padding: 15px;
+    margin: 20px;
+}
+#weatherCenter{
+    margin: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#card-weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(255, 246, 201, 0.832);
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(182, 173, 0);
+    height: 180px;
+    width: 90%;
+    margin: 0px;
+}
+#mainCity a{
+    color: black;
+}
+#mainCity{
+    transition: transform 0.5s ease;
+}
+#mainCity:hover{
+    transform: scale(1.1);
+}
+#cityimg{
+    display: flex;
+    align-items: center;
+}
+#cityimg img{
+    margin-right: 10px;
+    width: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#weather-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.first-data{
+    margin-right: 45px;
+}
+.first-data h3{
+    padding: 5px;
+    margin: 0px;
+}
+.first-data h2{
+    padding: 0px;
+    margin: 5px;
+}
+.first-data p{
+    padding: 0px;
+    margin: 10px;
+}
+#temp_now h1{
+    text-align: center;
+}
+#willayaWeather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.wilaya{
+    background-color: rgba(206, 199, 5, 0.792);
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.5s ease,box-shadow 0.25s ease;
+}
+.wilaya:hover{
+    box-shadow: 2px 2px 3px rgb(117, 113, 0);
+    transform: translateY(-5%);
+}
+.wilaya a{
+    color: black;
+    font-size: 17px;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.wilaya a:hover{
+    transform: scale(1.1);
+}
+.wilaya h3{
+    font-size: 25px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+.wilaya p{
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 17px;
+}
+.wilaya h5{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+#h1-2{
+    text-align: center;
+}
+#sea-weather{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.sea-state{
+    background-color: rgba(206, 199, 5, 0.792);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease,box-shadow 0.25s ease;
+}
+.sea-state:hover{
+    box-shadow: 2px 2px 3px rgb(117, 113, 0);
+    transform: translateY(-5%);
+}
+.sea-state h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+}
+.sea-state h2{
+    font-size: 30px;
+    padding: 0px;
+    margin: 10px;
+}
+.sea-state p{
+    font-size: 19px;
+    margin: 10px;
+}
+footer{
+    background-color: rgb(150, 150, 0);
+    margin-top: 10px;
+}
+footer div{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer div p{
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+@keyframes show {
+    from{transform: translateX(100%);}
+}
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@media (max-width: 750px){
+    header nav{
+        display: none;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    header img{
+        width: 60px;
+        height: 60px;
+    }
+    .fa-solid.fa-bars{
+        display: block;
+    }
+    #weatherCenter h1{
+        font-size: 25px;
+    }
+    #card-weather{
+        flex-direction: column;
+        height: fit-content;
+        width: 70%;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    #weather-data{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .first-data{
+        margin-right: 0px;
+    }
+    .first-data h3{
+        padding: 5px;
+        margin: 0px;
+        font-size: 25px;
+    }
+    .first-data h2{
+        padding: 5px;
+        margin: 0px;
+        font-size: 35px;
+    }
+    .first-data p{
+        padding: 6px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+    #temp_now h1{
+        font-size: 25px;
+    }
+    .wilaya{
+        margin-top: 10px;
+        padding: 15px;
+        width: 180px;
+        transition: box-shadow 0.5s ease;
+    }
+    .wilaya:hover{
+        box-shadow: 2px 2px 3px rgb(117, 113, 0);
+        transform: none;
+    }
+    #h1-2{
+        font-size: 25px;
+    }
+    #sea-weather{
+        flex-direction: column;
+    }
+    .sea-state{
+        transition: box-shadow 0.5s ease;
+    }
+    .sea-state:hover{
+        box-shadow: 2px 2px 3px rgb(117, 113, 0);
+        transform: none;
+    }
+    .sea-state h1{
+        font-size: 25px;
+    }
+    .sea-state p{
+        font-size: 17px;
+    }
+    footer div p{
+        font-size: 15px;
+        text-align: center;
+    }
+}

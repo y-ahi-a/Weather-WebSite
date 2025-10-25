@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Document</title>
+    <link rel="stylesheet" href="wilaya.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c4fa75e0a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <div id="content" style="display: none;">
+        <header>
+            <div id="header-info">
+                <img src="/images/favicon.png" alt="logo image">
+                <h1>Weather in Algeria</h1>
+                <nav>
+                    <a href="/index.html">Home</a>
+                    <a href="#willayaWeather">Temperature</a>
+                    <a href="/continentspages/europe.html">Europe</a>
+                    <a href="/continentspages/asia.html">Asia</a>
+                </nav>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </div>
+            <nav id="burgermenu">
+                <a href="/index.html">Home</a>
+                <a href="#willayaWeather">Temperature</a>
+                <a href="/continentspages/europe.html">Europe</a>
+                <a href="/continentspages/asia.html">Asia</a>
+            </nav>
+        </header>
+        <section id="willayaWeather">
+            <div id="weatherCenter"> 
+                <h1 id="1h1"></h1>
+                <div id="card-weather">
+                    <div id="cityimg">
+                        <img src="" alt="city image" id="cityImg">
+                    </div>
+                    <h1 id="2h1"></h1>
+                    <div id="weather-data">
+                        <div class="first-data" id="1data">
+                                
+                        </div>
+                        <div class="first-data" id="2data">
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 class="titles">3 Part Of The Day Weather:</h1>
+        <section id="partWeather">
+            <div id="morning" class="partOfDay">
+                
+            </div>
+            <div id="noon" class="partOfDay">
+                
+            </div>
+            <div id="night" class="partOfDay">
+                
+            </div>
+        </section>
+        <h1 class="titles">3 Day Forecast Weather:</h1>
+        <section id="daysWeather">
+            
+        </section>
+        <footer id="footer">
+            <div>
+                <p>🌦️ Real-time weather & marine data a simple and fast weather forecast site.</p>
+                <p>Weather data provided by <a href="https://openweathermap.org" target="_blank">OpenWeather</a></p>
+                <p>© 2025 Weather in Algeria | All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="wilaya.js"></script>
+</body>
+</html>
