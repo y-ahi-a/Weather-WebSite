@@ -72,7 +72,7 @@ This project allows users to check the current **temperature**, **humidity**, **
 📍 Based in Algeria  
 💬 Passionate about web development and creative UI design  
 
-🔗 **GitHub:** [https://github.com/your-username](https://github.com/y-ahi-a)  
+🔗 **GitHub:** [https://github.com/y-ahi-a](https://github.com/y-ahi-a)  
 
 ---
 
